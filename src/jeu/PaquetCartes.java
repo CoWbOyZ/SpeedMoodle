@@ -115,7 +115,7 @@ public class PaquetCartes {
 	}
 
 	public Carte testerCarteSommet(int positionCarte, Carte sommet1, PaquetCartes paquet2) {
-		if (sommet1.estCompatible(paquet2.get(positionCarte))) {
+		if (sommet1.estCompatible(this.get(positionCarte))) {
 			paquet2.joueur.oterEventuellementUnePenalite();
 			return this.remove(positionCarte);
 		} else {

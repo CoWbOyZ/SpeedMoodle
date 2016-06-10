@@ -103,7 +103,7 @@ public class Carte implements Test {
 	public boolean estCompatible (Carte c2) {
 		boolean test = false; 
 		if (!c2.isVide() && !this.isVide() &&
-				(this.couleur == c2.couleur) || (this.motif == c2.motif) ||	(this.valeur == c2.valeur)) {
+				(this.couleur == c2.couleur) || (this.motif == c2.motif) || (this.valeur == c2.valeur)) {
 			test = true;
 		}
 		return test;
